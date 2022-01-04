@@ -10,7 +10,7 @@ The response is found in the file titled *Technical Assessment Question 1 - API 
 
 > Start a ZenHub Kanban board. Create 5 issues with 5 sample work prompts written in markdown. Then, create a sprint spanning two weeks including all 5 issues.
 
-This can be found under the ZenHub tab in this repo. 
+This can be found under the ZenHub tab in this repo
 
 >  Using Figma, develop a desktop app user-interface containing any common components. Have fun with the design and color scheme and make it your own. This is an important task as creating Figma designs will be imperative for our workflow in the future. Publish a picture (PNG or JPEG) of your design to the Github repo.
 
