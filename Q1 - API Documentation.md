@@ -1,21 +1,51 @@
-#API Documentation
+# API Documentation
 
-##GET api/get_employee
+All responses are provided as JSON objects
+Parameters: 
 
-###Resource URL
+Employee profile: Commonly used group of parameters in the employee endpoint
+- Employee name
+- Department name
+- Employee salary
 
-http://domain.com/api/get_employee
+## GET employees/get_employee/id
 
-##POST api/add_employee
+Returns the employee profile to client
 
-###Resource URL
+### Resource URL
 
-http://domain.com/api/add_employee
+``` http://domain.com/api/get_employee ```
 
+### Example Request
 
+## POST employees/add_employee
 
-http://domain.com/api/add_department
+Uses employee profile parameters to populate data in each table accordingly and returns using ```get_employee``` endpoint in combination to client
 
-http://domain.com/api/update_salary
+### Resource URL
 
-http://domain.com/api/terminate_employee
+``` http://domain.com/api/add_employee ```
+
+## POST employees/add_department
+
+Creates new department and returns the newly created department name and id
+
+### Resource URL
+
+``` http://domain.com/api/add_department ``` 
+
+## PUT employees/update_salary/id
+
+Updates salary entry for specificed employee and subsequently returns employee profile from ```get_employee``` endpoint
+
+### Resource URL
+
+``` http://domain.com/api/update_salary ```
+
+## DELETE employees/terminate_employee
+
+Deletes specified employee and corresponding salary entities from database
+
+### Resource URL
+
+``` http://domain.com/api/terminate_employee ```
